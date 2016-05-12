@@ -1,3 +1,10 @@
+/**
+ * Android Pebble Watchface Steffen 1
+ *
+ * This file is licensed under the terms of the Gnu General Public license,
+ * version 2. The author does not permit military use. See the file LICENSE
+ * for details.
+ */
 package de.cybervisor.steffen.android_pebble_watchface_steffen1;
 
 import android.content.Context;
@@ -98,11 +105,6 @@ public class MainActivity extends AppCompatActivity {
                         PebbleDictionary resultDict = new PebbleDictionary();
                         resultDict.addInt32(PHONE_RET_BATTERY_LEVEL, level);
                         PebbleKit.sendDataToPebble(getApplicationContext(), APP_UUID, resultDict);
-                    }
-
-                    // Down received?
-                    if (dict.getInteger(1) != null) {
-                        textView.setText("1 received.");
                     }
                 }
             };

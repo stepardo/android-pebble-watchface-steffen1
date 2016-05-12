@@ -1,0 +1,4 @@
+This is the corresponding app for pebble-watchface-steffen1.
+
+It is my personal playground for programming pebble. For now it can be queried
+to tell the phones battery level.
